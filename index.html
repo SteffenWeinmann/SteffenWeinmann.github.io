@@ -4,11 +4,17 @@
   <title>Your GitHub Page Title</title>
   <style>
     body {
-      background-image: url('paper-texture.jpg'); /* Replace with your paper texture image's filename */
-      background-color: #f2f2f2; /* Fallback color */
+      background-color: #f7f7f0;
       font-family: "Calibri", sans-serif;
       text-align: center;
-      background-size: cover; /* Adjust to cover the whole background */
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
     }
     header {
       margin-top: 50px;
@@ -16,11 +22,14 @@
     h1 {
       margin: 0;
     }
-    .separator {
-      width: 100px;
+    .long-dash {
+      width: 150px; /* Adjust the width as needed */
       height: 2px;
       background-color: #333;
       margin: 10px auto;
+    }
+    .sub-heading {
+      font-size: 1.2em; /* Adjust the font size as needed */
     }
     .description {
       font-style: italic;
@@ -33,19 +42,22 @@
 </head>
 <body>
 
-<header>
-  <h1>Steffen Weinmann</h1>
-  <div class="separator"></div>
-  <p class="description">"Aspiring PhD student for the establishment of solid-state batteries at the Technical University of Munich. Paving the way to become a leading expert in ceramics processing and start an academic career"</p>
-</header>
+<div class="container">
+  <header>
+    <h1>Steffen Weinmann</h1>
+    <div class="long-dash"></div>
+    <h2 class="sub-heading">PhD student, Investor, Sports</h2>
+    <p class="description">"Aspiring PhD student for the establishment of solid-state batteries at the Technical University of Munich. Paving the way to become a leading expert in ceramics processing and start an academic career"</p>
+  </header>
 
-<main>
-  <p class="position-description">PhD candidate researching solid state batteries at Technical University Munich in Munich at Prof. Dr. Jennifer L.M. Rupp's Group at the <a href="https://ecm-tum.de/">chair for chemistry of solid-state electrolytes</a>.</p>
-</main>
+  <main>
+    <p class="position-description">PhD candidate researching solid state batteries at Technical University Munich in Munich at Prof. Dr. Jennifer L.M. Rupp's Group at the <a href="https://ecm-tum.de/">chair for chemistry of solid-state electrolytes</a>.</p>
+  </main>
 
-<footer>
-  <p>&copy; 2023 Steffen Weinmann. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>&copy; 2023 Steffen Weinmann. All rights reserved.</p>
+  </footer>
+</div>
 
 </body>
 </html>
