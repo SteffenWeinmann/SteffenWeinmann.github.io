@@ -4,11 +4,17 @@
   <title>Your GitHub Page Title</title>
   <style>
     body {
-      background-image: url('paper-texture.jpg'); /* Replace with your paper texture image's filename */
-      background-color: #f2f2f2; /* Fallback color */
+      background-color: #f7f7f0;
       font-family: "Calibri", sans-serif;
       text-align: center;
-      background-size: cover; /* Adjust to cover the whole background */
+      margin: 0; /* Reset default margin */
+      padding: 0; /* Reset default padding */
+    }
+    .container {
+      max-width: 800px; /* Adjust the width as needed */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Add some padding */
+      box-sizing: border-box; /* Include padding in total width */
     }
     header {
       margin-top: 50px;
@@ -33,19 +39,21 @@
 </head>
 <body>
 
-<header>
-  <h1>Steffen Weinmann</h1>
-  <div class="separator"></div>
-  <p class="description">"Aspiring PhD student for the establishment of solid-state batteries at the Technical University of Munich. Paving the way to become a leading expert in ceramics processing and start an academic career"</p>
-</header>
+<div class="container">
+  <header>
+    <h1>Steffen Weinmann</h1>
+    <div class="separator"></div>
+    <p class="description">"Aspiring PhD student for the establishment of solid-state batteries at the Technical University of Munich. Paving the way to become a leading expert in ceramics processing and start an academic career"</p>
+  </header>
 
-<main>
-  <p class="position-description">PhD candidate researching solid state batteries at Technical University Munich in Munich at Prof. Dr. Jennifer L.M. Rupp's Group at the <a href="https://ecm-tum.de/">chair for chemistry of solid-state electrolytes</a>.</p>
-</main>
+  <main>
+    <p class="position-description">PhD candidate researching solid state batteries at Technical University Munich in Munich at Prof. Dr. Jennifer L.M. Rupp's Group at the <a href="https://ecm-tum.de/">chair for chemistry of solid-state electrolytes</a>.</p>
+  </main>
 
-<footer>
-  <p>&copy; 2023 Steffen Weinmann. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>&copy; 2023 Steffen Weinmann. All rights reserved.</p>
+  </footer>
+</div>
 
 </body>
 </html>
